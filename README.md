@@ -9,6 +9,8 @@ The rootkit's name is `system_x_helper`
 
 ## How to install
 
+Clone this repository
+
 Install `dependencies` on the target machine
 
 #### Debian

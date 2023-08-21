@@ -11,9 +11,9 @@ The rootkit's name is `system_x_helper`
 
 Install `dependencies` on the target machine
 
-###### Debian
+#### Debian
 `$ apt install make build-essential linux-headers-$(uname -r)`
-###### RedHat
+#### RedHat
 `$ yum install kernel-devel make gcc`
 
 Now run `$ make`

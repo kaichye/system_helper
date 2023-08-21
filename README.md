@@ -16,6 +16,8 @@ Install `dependencies` on the target machine
 #### RedHat
 `$ yum install kernel-devel make gcc`
 
+
+
 Now run `$ make`
 
 Finaly, run `$ /sbin/insmod system_x_helper.ko`

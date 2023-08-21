@@ -9,10 +9,12 @@ The rootkit's name is `system_x_helper`
 
 ## How to install
 
-First get the target's kernel version so we can compile (run `$ uname -r`)
-Next, in the `Makefile` replace `$(shell uname -r)` with the output of the target's output
+Install `dependencies` on the target machine
 
-Install `make build-essential linux-headers-$(uname -r)`
+###### Debian
+`$ apt install make build-essential linux-headers-$(uname -r)`
+###### RedHat
+`$ yum install kernel-devel make gcc`
 
 Now run `$ make`
 

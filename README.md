@@ -24,8 +24,8 @@ Sometimes `uname -r` adds something extra. If that's the case, edit the `Makefil
 
 #### If worse comes to worst and it still doesn't work
 Do `$ ls -l /lib/modules/$(shell uname -r)/build`</br>
-That should give you a file that it's linked to.</br>
-Rename that directory to match `uname -r`.</br>
+That should give you a directory that it's linked to.</br>
+Rename that directory to match `uname -r`. (It's probably renamed something else)</br>
 Also edit `/usr/src/kernels/{your version}/include/generated/utsrelease.h` and change it to match the output of `uname -r` as well.
 
 ### Finishing off

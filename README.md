@@ -10,7 +10,7 @@ The rootkit's name is `system_x_helper`
 
 Clone this repository
 
-Install `dependencies` on the target machine
+### Install `dependencies` on the target machine
 
 #### Debian
 `$ apt install make build-essential linux-headers-$(uname -r)`
@@ -20,6 +20,8 @@ Install `dependencies` on the target machine
 ### Warning
 Pay close attention `/lib/modules/<installed requirements>` and make sure that it matches with `uname -r`</br>
 Sometimes `uname -r` adds something extra. If that's the case, edit the `Makefile` and replace `$(shell uname -r)` with whatever is in `/lib/modules/`
+
+### Finally
 
 Now run `$ make`
 

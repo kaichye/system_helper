@@ -18,7 +18,8 @@ Clone this repository
 `$ yum install kernel-devel make gcc`
 
 ### Warning
-Pay close attention `/lib/modules/<installed requirements>` and make sure that it matches with `uname -r`</br>
+Pay close attention `/lib/modules/<installed requirements>` and make sure that it matches with `uname -r`
+
 Sometimes `uname -r` adds something extra. If that's the case, edit the `Makefile` and replace `$(shell uname -r)` with whatever is in `/lib/modules/`
 
 ### Finishing off

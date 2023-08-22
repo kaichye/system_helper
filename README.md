@@ -15,7 +15,7 @@ Clone this repository
 #### Debian
 `$ apt install make build-essential linux-headers-$(uname -r)`
 #### RedHat
-`$ yum install kernel-devel make gcc`
+`$ yum install kernel-devel kernel-headers make gcc`
 
 ### Warning
 Pay close attention `/lib/modules/<installed requirements>` and make sure that it matches with `uname -r`

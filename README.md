@@ -22,6 +22,11 @@ Pay close attention `/lib/modules/<installed requirements>` and make sure that i
 
 Sometimes `uname -r` adds something extra. If that's the case, edit the `Makefile` and replace `$(shell uname -r)` with whatever is in `/lib/modules/`
 
+#### If worse comes to worse and it still doesn't work
+Do `$ ls -l /lib/modules/$(shell uname -r)/build`</br>
+That should give you a file that it's linked to.</br>
+Use that file's path instead of what in the `Makefile` (Replace it) and it should work!
+
 ### Finishing off
 
 Now run `$ make`

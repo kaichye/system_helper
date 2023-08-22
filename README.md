@@ -18,6 +18,10 @@ Install `dependencies` on the target machine
 #### RedHat
 `$ yum install kernel-devel make gcc`
 
+### Warning
+Pay close attention `/lib/modules/<installed requirements>` and make sure that it matches with `uname -r`</br>
+Sometimes `uname -r` adds something extra. If that's the case, edit the `Makefile` and replace `$(shell uname -r)` with whatever is in `/lib/modules/`
+
 Now run `$ make`
 
 Finaly, run `$ /sbin/insmod system_x_helper.ko`

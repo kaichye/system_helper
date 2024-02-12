@@ -1,4 +1,4 @@
-# My rootkit!
+# My rootkit! For testing
 Most code copied from [The Xcellerator](https://github.com/xcellerator/linux_kernel_hacking/tree/master/3_RootkitTechniques)</br>
 Keylogger from [jarun](https://github.com/jarun/spy)
 
